@@ -1,6 +1,6 @@
 var 	gulp = require('gulp'),concat = require('gulp-concat');
 
-var 	bower_path = 'bower_components';
+var 	bower_path = 'vendor/bower';
 
 gulp.task('theme:css', function()
 {
