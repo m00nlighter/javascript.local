@@ -1,0 +1,17 @@
+{
+  "name": "js.exam",
+  "version": "1.0.0",
+  "description": "javascript exam project",
+  "main": "index.html",
+  "dependencies": {
+    "bower": "^1.7.9",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

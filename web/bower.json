@@ -1,0 +1,21 @@
+{
+  "name": "js.exam",
+  "description": "Javascript examproject",
+  "main": "index.html",
+  "authors": [
+    "Kulik Vadim"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "AdminLTE": "admin-lte#^2.3.6"
+  }
+}

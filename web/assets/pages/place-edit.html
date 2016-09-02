@@ -1,0 +1,38 @@
+<div class="box box-solid box-primary">
+			<div class="box-header">
+          <h3 class="box-title" ng-bind="isNew ? 'Create Place' : 'Update Place' "></h3>
+          <div class="box-tools">
+              <button ui-sref="map.list" type="button" class="btn btn-box-tool"><i class="fa fa-list"></i></button>
+          </div>
+			</div>
+			<div class="box-body">
+
+          <form name="placeForm" novalidate>
+            <div class="form-group" ng-class="hasErrors('title')">
+                <label class="control-label">Title *:</label><br/>
+                <input type="text" ng-model="place.title" class="form-control" placeholder="Enter Title">
+                <span class="help-block" ng-if="errors.title">{{errors.title}}</span>
+            </div>
+            <div class="form-group" ng-class="hasErrors('description')">
+                <label class="control-label">Description *:</label><br/>
+                <textarea ng-model="place.description" class="form-control" placeholder="Enter Description"></textarea>
+                <span class="help-block" ng-if="errors.description">{{errors.description}}</span>
+            </div>
+            <div class="form-group" ng-class="hasErrors('lat')">
+                <label class="control-label">Latitude *:</label><br/>
+                <input type="text" ng-model="place.lat" class="form-control" placeholder="Click on Map">
+                <span class="help-block" ng-if="errors.lat">{{errors.lat}}</span>
+            </div>
+            <div class="form-group" ng-class="hasErrors('lng')">
+                <label class="control-label">Longtitude *:</label><br/>
+                <input input type="text" ng-model="place.lng" class="form-control" placeholder="Click on Map">
+                <span class="help-block" ng-if="errors.lng">{{errors.lng}}</span>
+            </div>
+
+          </form>
+			</div>
+      <div class="box-footer">
+        <button ng-if="isNew" type="submit" ng-click="add()" class="btn btn-primary">Add</button>
+        <button ng-if="!isNew" type="submit" ng-click="update()" class="btn btn-primary">Update</button>
+      </div>
+		</div>
